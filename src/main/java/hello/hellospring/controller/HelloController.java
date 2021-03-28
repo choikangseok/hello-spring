@@ -35,7 +35,7 @@ public class HelloController {
         Hello hello = new Hello();
         hello.setName(name);
         hello.setAge(age);
-        `return hello;`
+        return hello;
     }
     static class Hello {
         private String name;

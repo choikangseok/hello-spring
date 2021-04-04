@@ -8,10 +8,12 @@ import org.junit.jupiter.api.Test;
 import javax.swing.text.html.Option;
 
 import java.util.List;
+import java.util.Optional;
 
 import static org.assertj.core.api.Assertions.*;
 
 public class MemoryMemberRepositoryTest {
+
     MemoryMemberRepository repository = new MemoryMemberRepository();
 
     @AfterEach
@@ -50,6 +52,7 @@ public class MemoryMemberRepositoryTest {
         assertThat(result).isEqualTo(member1);
 
     }
+
     @Test
     public  void findAll() {
         Member member1 = new Member();
